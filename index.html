@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username" required><br><br>
+
+<label for="password">Password:</label><br>
+<input type="password" id="passinput" name="password" required><br><br>
+
+<input type="submit" onclick="DoStuff()">
+
+
+<script>
+
+    let HiddenUser = "netnal2360"
+    let HiddenPass = "1234"
+
+    function DoStuff(){
+        let UserName = username.value
+        let Password = passinput.value
+
+        if(!UserName || !Password){
+            alert("לא ציינת סיסמא או שם משתמש")
+            return
+        }
+
+        let CorrectValues = HiddenUser == UserName && HiddenPass == Password
+
+        if(CorrectValues){
+            alert("logged in")
+        }else
+            alert("Not Logged In")
+    }
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const wealthiestPeople = {
+            "topwealth": [
+                { "name": "Elon Musk", "networth": "180.1 billion USD" },
+                { "name": "Jeff Bezos", "networth": "199.6 billion USD" },
+                { "name": "Bernard Arnault & family", "networth": "191.3 billion USD" },
+                { "name": "Bill Gates", "networth": "131.5 billion USD" },
+                { "name": "Mark Zuckerberg", "networth": "128.7 billion USD" },
+                { "name": "Warren Buffett", "networth": "103.5 billion USD" },
+                { "name": "Larry Ellison", "networth": "128.3 billion USD" },
+                { "name": "Larry Page", "networth": "123.0 billion USD" },
+                { "name": "Sergey Brin", "networth": "120.7 billion USD" },
+                { "name": "Mukesh Ambani", "networth": "92.7 billion USD" }
+            ]
+        };
+
+        let WArray = wealthiestPeople[["topwealth"]]
+        for (let index = 0; index < WArray.length; index++) {
+            const element = WArray[index];
+            console.log(element)
+        }
+
+
+        console.log("Last One Quest")
+        console.log(WArray[WArray.length - 1])
+
+        console.log("Opposite Way")
+        for (let j = WArray.length - 1; j > 0; j--) {
+            const element = WArray[j];
+            console.log(element)
+        }
+
+
+    </script>
+</body>
+
+</html>
